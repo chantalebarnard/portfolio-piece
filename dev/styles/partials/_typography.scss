@@ -1,0 +1,220 @@
+body {
+	font-family: $montserrat;
+}
+
+img {
+	display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4, 
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.05em;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+i {
+	position: absolute;
+	bottom: 10%;
+}
+
+h1 {
+	font-family: $montserrat;
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+} 
+
+h2 {
+	font-family: $montserrat;
+	font-weight: 400;
+	color:  #232227;
+	font-size: 29.81px;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h3 {
+	color:  #232227;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 52.97px
+}
+
+h4 {
+	color: $black;
+	font-family: $playfair;
+	font-size: 40px;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 0px;
+	margin-bottom: 15px;
+}
+
+h5 {
+	font-family: Montserrat;
+	color:  $black;
+	font-size: 104px;
+	font-weight: 700;
+	font-size: 40px;
+	// line-height: 90px;
+}
+
+h6 {
+	color:  #cccccc;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+h4::before {
+	content:"";
+	position: absolute;
+	bottom: 0;
+	width: 50px;
+	height: 3px;
+	background: $black;
+	right: 100%;
+	top: 0;
+	transform: translateY(-100%);
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	height: 100vh;
+	line-height: 80px;
+	position: relative;
+
+
+
+	background: #36D1DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	// background: #B2FEFA;  /* fallback for old browsers */
+	// background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	// background: #1488CC;  /* fallback for old browsers */
+	// background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+	// background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	// background-color: $bgBlue;
+	// background-color: $grey;
+	// background-color:#f8f9f7;
+}
+
+//start of second header
+
+
+.header2 {
+	margin: 0 auto;
+	min-height: 100vh;
+	line-height: 50px;
+}
+
+.header2 img {
+	position: absolute;
+	width: 450px;
+	z-index: -1;
+	top: 20%;
+	left: 80%;
+}
+.container2 {
+	width: 50%;
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+	min-height: 100vh;
+	line-height: 78px;
+	float: left;
+}
+
+.introduction2 {
+	position: absolute;
+	top: 25%;
+}
+
+// .header2 p {
+// 	position: absolute;
+// 	z-index: 1;
+// 	top: 60%;
+// 	// bottom: 0;
+// }
+.name2 {
+	font-size: 104px;
+	font-weight: 700;
+	line-height: 100px;
+	text-align: left;
+	top: 70%;
+	text-transform: uppercase;
+}
+
+.occupation {
+	color: $grey;
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 30px;
+	top: 65%;
+}
+
+// end of second header
+
+// third header 
+
+
+
+// portfolio 
+
+.portfolioPieces {
+	// background-color: $bgGrey;
+}
+
+// end of third header
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+
+
+.portfolioPieces {
+	// background-color: #fff;
+	// background-color: $bgGrey;
+}
+
+.aboutMe {
+	// background-color: #1d1b20;
+		// background-color: $bgGrey;
+		// background-color: #fff;
+
+}
+
+footer {
+	background-color: $ftBlue;
+}
