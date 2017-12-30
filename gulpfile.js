@@ -19,6 +19,18 @@ gulp.task('scripts', () => {
 		.pipe(gulp.dest('./public/scripts'));
 });
 
+gulp.task('browser-sync', () => {
+	browserSync.init({
+		server: '.'
+	});
+});
+
+gulp.task('default', ['styles', 'browser-sync', 'scripts'], () => {
+	gulp.watch('./dev/styles/**/*.scss', ['styles']);
+	gulp.watch('./dev/scripts/main.js'), ['scripts'];
+ 	gulp.watch('*.html', reload);
+});
+
 
 gulp.task('browser-sync', () => {
 	browserSync.init({

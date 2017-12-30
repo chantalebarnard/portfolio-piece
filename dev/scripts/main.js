@@ -1,9 +1,7 @@
 $(function(){
-
-	console.log("asadasdasd");
 	$('.arrowContainer').click(function(e){
 		$('html, body').animate({
-			scrollTop: $('#nav').offset().top
+			scrollTop: $('#about').offset().top
 		}, 
 		1500);
 	});
@@ -17,5 +15,14 @@ $(function(){
 	});
 	
 	new WOW().init();
+
+	// function myFunction() {
+	// 	var x = document.getElementById('nav');
+	// 	if (x.className === navBar') {
+	// 		x.className += " responsive";
+	// 	} else {
+	// 		x.className = 'navBar';
+	// 	}
+	// }
 });
 

@@ -1,5 +1,23 @@
 body {
 	font-family: $montserrat;
+	border: 1.8rem solid #000;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	// padding-right:  50px;
+	// padding-left: 50px;
+	// padding: 25px;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+
+
 }
 
 img {
@@ -27,43 +45,21 @@ a {
 	text-decoration: none;
 }
 
-i {
-	position: absolute;
-	bottom: 10%;
-}
+// i {
+// 	position: absolute;
+// 	bottom: 10%;
+// }
 
 h1 {
-	font-family: $montserrat;
+	font-size: 104px;
 	font-weight: 700;
-	display: flex;
-	flex-direction: column;
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	line-height: 100px;
+	text-align: left;
+	top: 70%;
 	text-transform: uppercase;
 } 
 
 h2 {
-	font-family: $montserrat;
-	font-weight: 400;
-	color:  #232227;
-	font-size: 29.81px;
-	position: absolute;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-h3 {
-	color:  #232227;
-	font-size: 30px;
-	font-weight: 400;
-	line-height: 52.97px
-}
-
-h4 {
 	color: $black;
 	font-family: $playfair;
 	font-size: 40px;
@@ -73,13 +69,28 @@ h4 {
 	margin-bottom: 15px;
 }
 
-h5 {
-	font-family: Montserrat;
-	color:  $black;
-	font-size: 104px;
+h3 {
+	font-family: PlayfairDisplay;
+	position: relative;
+	left: 50%;
+	font-size: 25px;/* Approximation due to font substitution */
+	font-weight: 400;
+	text-transform: lowercase;
+	color: $grey;
+}
+
+h4{
+	font-size: 100px;
 	font-weight: 700;
-	font-size: 40px;
-	// line-height: 90px;
+	line-height: 78.971px;
+	margin-top: 10px;
+}
+
+h5 {
+	color:  #232227;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 52.97px
 }
 
 h6 {
@@ -89,132 +100,135 @@ h6 {
 	line-height: 30px;
 }
 
-h4::before {
+h2::before {
 	content:"";
 	position: absolute;
 	bottom: 0;
 	width: 50px;
-	height: 3px;
+	height: 2px;
 	background: $black;
 	right: 100%;
 	top: 0;
 	transform: translateY(-100%);
 }
 
-header {
+h3::before {
+		content:"";
+		position: absolute;
+		bottom: 0;
+		width: 1px;
+		height: 76px;
+		background: $grey;
+		left: -23px;
+		// transform: translateY(50%);
+}
+
+// header
+
+.header {
 	margin: 0 auto;
-	text-align: center;
 	height: 100vh;
-	line-height: 80px;
-	position: relative;
-
-
-
-	background: #36D1DC;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	// background: #B2FEFA;  /* fallback for old browsers */
-	// background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
-	// background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	// background: #1488CC;  /* fallback for old browsers */
-	// background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-	// background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-	// background-color: $bgBlue;
-	// background-color: $grey;
-	// background-color:#f8f9f7;
-}
-
-//start of second header
-
-
-.header2 {
-	margin: 0 auto;
-	min-height: 100vh;
+	// height: 100vh;
 	line-height: 50px;
+	background: 
+	url('../../assets/coffee.svg') left 28% top 15%/40px no-repeat,
+	url('../../assets/dog.svg') left 12% top 50%/150px no-repeat, 
+	url('../../assets/light.svg') left 80% top 80%/50px no-repeat,
+	url('../../assets/wifi.svg') left 60% top 10%/60px no-repeat,
+	url('../../assets/code.svg') left 90% top 30%/50px no-repeat,
+	// url('../../assets/wifi.svg') left 20% top 90%/50px no-repeat,
+	linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	    // border-bottom: 0.4em #000 solid;
 }
 
-.header2 img {
-	position: absolute;
-	width: 450px;
-	z-index: -1;
-	top: 20%;
-	left: 80%;
+
+// About Me 
+
+.aboutMe {
+	// margin-top: 150px;
+	    // border-bottom: 0.4em #000 solid;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: 
+	url('../../assets/dots.png') left 110% top 0%/400px no-repeat,
+	url('../../assets/dots.png') left 0% top 90%/400px no-repeat,
+	url('../../assets/cn.svg') left 25% top 20% /150px no-repeat,
+	url('../../assets/bike.svg') left 65% top 10%/75px no-repeat;
+	// url('../../assets/wifi.svg') left 20% top 90%/50px no-repeat;
+
 }
-.container2 {
-	width: 50%;
-	position: relative;
-	margin: 0 auto;
-	text-align: left;
-	min-height: 100vh;
-	line-height: 78px;
-	float: left;
-}
-
-.introduction2 {
-	position: absolute;
-	top: 25%;
-}
-
-// .header2 p {
-// 	position: absolute;
-// 	z-index: 1;
-// 	top: 60%;
-// 	// bottom: 0;
-// }
-.name2 {
-	font-size: 104px;
-	font-weight: 700;
-	line-height: 100px;
-	text-align: left;
-	top: 70%;
-	text-transform: uppercase;
-}
-
-.occupation {
-	color: $grey;
-	font-size: 18px;/* Approximation due to font substitution */
-	font-weight: 400;
-	line-height: 30px;
-	top: 65%;
-}
-
-// end of second header
-
-// third header 
-
-
 
 // portfolio 
 
 .portfolioPieces {
-	// background-color: $bgGrey;
-}
-
-// end of third header
-
-.wrapper {
-	max-width: 1080px;
-	margin: 0 auto;
+	padding-top: 100px;
+	background-color: $bgGrey;
+	// border-bottom: 0.4em #000 solid;
 }
 
 
 
-.portfolioPieces {
-	// background-color: #fff;
-	// background-color: $bgGrey;
-}
-
-.aboutMe {
-	// background-color: #1d1b20;
-		// background-color: $bgGrey;
-		// background-color: #fff;
-
-}
+// Footer
 
 footer {
-	background-color: $ftBlue;
+	// background-color: $ftBlue;
 }
+
+
+
+
+
+
+// section.navBar {
+// 	width: 100%;
+// 	text-align: center;
+// 	z-index: 100000;
+// 	box-shadow: 0 1px 4px 0 rgba(0,0,0,.40);
+// }
+// .navBar {
+// 	// position: fixed;
+// }
+
+// nav {
+// 	display: flex;
+// 	// position: fixed;
+// 	background: #fff;
+// 	// justify-content: flex-end;
+// 	justify-content: center;
+// 	ul {
+// 		display: flex;
+// 		padding: 30px;
+// 		li {
+// 			margin: 0 22px;
+// 			// padding-top: 25px;
+// 			// padding-bottom: 25px;
+// 		}
+// 	}
+// }
+
+// nav ul li::after {
+//     content: '';
+//     display: block;
+//     width: 0;
+//     height: 4px;
+//     background: $green;
+//     transition: width .3s;
+// }
+
+// nav ul li:hover::after {
+//     width: 100%;
+//    }
+
+// li a {
+//    	font-size: 18px;
+//    	text-align: center;
+//    	text-transform: uppercase;
+//    	color: $black;
+//    	transition: all 0.5s;
+//    	padding: 15px;
+// }
+
+//    nav ul li a:hover {
+//    	color:  $green;
+   	
+//    }

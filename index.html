@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<meta charset="UTF-8">
-	<title>My Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chantale Barnard</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+
 	<!-- <link rel="stylesheet" href="public/styles/animate.css"> -->
 	<!-- CSS Animate Library -->
 	<link rel="stylesheet"
@@ -16,105 +19,106 @@
 
 </head>
 <body>
-	<div class="header2">
+	<div class="header">
 		<div class="wrapper">
-			<div class="container2 clearfix">
-				<div class="nameContainer">
-					<div class="introduction introduction2">
-						<h4>Hello! I'm</h4>
-						<p class="name2">Chantale Barnard</p>
-						<p class="occupation">Web Developer</p>
-					</div>
+			<div class="headerContainer">
+				<div class="introduction">
+					<h2>Hello! I'm</h2>
+					<h1>Chantale<br>Barnard</h1>
+					<p class="occupation">Web Developer</p>
 				</div>
-				<img src="assets/Dotted Graphic.png" alt="">
 			</div>
-			<div class="arrowContainer">
+			<div class="arrowContainer animated bounce">
 				<i class="fa fa-angle-down fa-4x" aria-hidden="true"></i>
 			</div>
 		</div>
 	</div>
-	<section id= "nav" class="navBar">
-		<nav>
-			<ul>
-				<li class="scroll"><a class="scroll" href="#work">work</a></li>
-				<li><a class="scroll" href="#about">about</a></li>
-				<li><a class="scroll" href="#contact">contact</a></li>
-			</ul>
-		</nav>
+	<section id="about" class="aboutMe">
+		<div class="wrapper">
+			<div class="aboutMeHeader">
+				<div class="aboutContainer">
+					<h3>who I am</h3>
+					<h4>About</h4>
+				</div>
+			</div>
+			<div class="meContainer">
+				<div class="headshot">
+					<img src="assets/headshot2.png" alt="">
+				</div>
+				<div class="summary">
+					<p class="paragraph--One">My name is Chantale, and I'm a Toronto based web-developer. I love creating powerful applications with user experience, accessibility, and design in mind. Always doing the research and reading the documentation when it comes to learning new frameworks. As a recent graduate of the full-time web-development immersive program at HackerYou, I'm highly motivated and have proven that I'm able to quickly learn new programming languages.</p>
+					<p class="paragraph--Two">In my spare time I'm probably biking while listening to a cool tech podcast. I love to be in the know, so I'm constantly reading tech blogs, attending conferences and tech events around the city.</p>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section id="work" class="portfolioPieces">
-		<div class="wrapper">
+		<div id="portfolio" class="wrapper">
+			<div class="aboutMeHeader">
+				<div class="aboutContainer">
+					<h3>my work</h3>
+					<h4>portfolio</h4>
+				</div>
+			</div>
 			<div class="container container--react ">
 				<div class="portfolioPieceImage portfolioPieceImage--react wow slideInLeft">
-					<!-- <a href=""><img src="assets/react.png" alt=""></a> -->
-					<a href=""><img src="../assets/react.jpg" alt=""><div class="overlay"></div></a>
+					<a href="https://triplist-bba88.firebaseapp.com/"><img src="../assets/react.jpg" alt=""><div class="overlay"></div></a>
 				</div>
 				<div class="portfolioPieceBlurb portfolioPieceBlurb--react wow slideInRight">
-					<ul class="projectType">
+					<ul class="projectType projectType--react">
 						<li>React</li>
 						<li>Javascript</li>
-						<!-- <li>JQuery</li> -->
-						<li>html</li>
-						<li>css</li>
-						<li>responsive design</li>
+						<li>JQuery</li>
+						<li>Firebase</li>
 					</ul>
-					<h3>React Application</h3>
-					<p class="portfolioDescription portfolioDescription--react">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure, itaque placeat incidunt dolor asperiores facere et </p>
-					<div class="buttons">
-						<a class="button" href="https://triplist-bba88.firebaseapp.com/">view live</</a>
-						<a class="button" href="">github</a>
+					<h5>Triplist</h5>
+					<p class="portfolioDescription portfolioDescription--react">A user authenticated app that allows users to share items they would pack for a trip or event. </p>
+					<div class="buttons buttons--react">
+						<a target=0 class="button" href="https://triplist-bba88.firebaseapp.com/">view live</a>
 					</div>
 				</div>
 			</div>
 			<div class="container container--api">
 				<div class="portfolioPieceImage portfolioPieceImage--api wow slideInRight">
 					<!-- <a href=""><img src="../assets/js.png" alt=""></a> -->
-					<a href=""><img src="../assets/api.jpg" alt=""><div class="overlay"></div></a>
+					<a target="_blank" href="http://www.chantalebarnard.com/where-at"><img src="../assets/api.jpg" alt=""><div class="overlay"></div></a>
 				</div>
-
 				<div class="portfolioPieceBlurb portfolioPieceBlurb--api wow slideInLeft">
 					<ul class="projectType projectType--api">
 						<li>API</li>
 						<li>Javascript</li>
 						<li>JQuery</li>
-						<li>Design</li>
-						<li>html</li>
-						<li>css</li>
-						<!-- <li>responsive design</li> -->
 					</ul>
-					<h3>Client API Web Application</h3>
-					<p class="portfolioDescription portfolioDescription--api">Where At was a client based group project which incorporated Setlist.Fm's API and Google Maps API.  Track your favorite bands on tour to see where they have been and what their setlist was.</p>
-					<div class="buttons">
-						<a class="button" href="http://chantalebarnard.com/where-at/">view live</</a>
-						<a class="button" href="https://github.com/chantalebarnard/WhereAt">github</a>
+					<h5 class="even">Where At?</h5>
+					<p class="portfolioDescription portfolioDescription--api">A client based group project which incorporated Setlist.Fm's API and Google Maps API. Where At lets you track an artist or band's setlist based on the venue they played at. Track your favorite band's on tour to see where they have been and what their setlist was.</p>
+					<div class="buttons buttons--api">
+						<a class="button" target="_blank" href="http://www.chantalebarnard.com/where-at/">view live</a>
+						<!-- <a class="button" target="_blank" href="https://github.com/chantalebarnard.com/WhereAt">github</a> -->
 					</div>
 				</div>
 			</div>
 			<div class="container container--js">
 				<div class="portfolioPieceImage portfolioPieceImage--js wow slideInLeft">
 					<!-- <a href=""><img src="../assets/lang.png" alt=""></a> -->
-					<a href=""><img src="../assets/dmitri-popov-203436.jpg" alt=""><div class="overlay"></div></a>
+					<a href="http://www.chantalebarnard.com/js" target="_blank" ><img src="../assets/dmitri-popov-203436.jpg" alt=""><div class="overlay"></div></a>
 				</div>
 				<div class="portfolioPieceBlurb portfolioPieceBlurb--js wow slideInRight">
-					<ul class="projectType">
+					<ul class="projectType projectType--js">
 						<li>Javascript</li>
 						<li>JQuery</li>
-						<li>html</li>
-						<li>css</li>
-						<li>responsive design</li>
 					</ul>
-					<h3>Javascript Project</h3>
-					<p class="portfolioDescription portfolioDescription--js">Where to Next is a paired programming project with <a href="http://www.stewartgottfried.com">Stewart Godfried</a>. Traveling somewhere? Learn the basic phrases that'll help you get around.</p>
-					<div class="buttons">
-						<a class="button" href="">view live</</a>
-						<a class="button" href="https://github.com/chantalebarnard/psd-conversion">github</a>
+					<h5>Where to Next?</h5>
+					<p class="portfolioDescription portfolioDescription--js">Where to Next is a paired programming project with <a class="linkemb" href="http://www.stewartgottfried.com">Stewart Gottfried</a>. Traveling somewhere? Learn the basic phrases that'll help you get around. </p>
+					<div class="buttons buttons--js">
+						<a class="button" target="_blank" href="http://www.chantalebarnard.com/js">view live</a>
+						<!-- <a class="button" target="_blank" href="">github</a> -->
 					</div>
 				</div>
 			</div>
 			<div class="container container--psd">
 				<div class="portfolioPieceImage portfolioPieceImage--psd wow slideInRight">
 					<!-- <a href=""><img src="../assets/startupz.png" alt=""></a> -->
-					<a href=""><img src="../assets/psd.jpg" alt=""><div class="overlay"></div></a>
+					<a href="https://www.chantalebarnard.com/psd-conversion"><img src="../assets/psd.jpg" target="_blank" alt=""><div class="overlay"></div></a>
 
 				</div>
 				<div class="portfolioPieceBlurb portfolioPieceBlurb--psd wow slideInLeft">
@@ -123,54 +127,40 @@
 						<li>css</li>
 						<li>responsive design</li>
 					</ul>
-					<h3>PSD Conversion to HTML</h3>
+					<h5 class="even">Startupz</h5>
 					<p class="portfolioDescription portfolioDescription--psd">Startupz is a single page responsive website, made with accessibility in mind.</p>
-					<div class="buttons">
-						<a class="button" href="">view live</</a>
-						<a class="button" href="">github</a>
+					<div class="buttons buttons--psd">
+						<a class="button" target="_blank" href="http://chantalebarnard.com/psd-conversion/">view live</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section id="about" class="aboutMe">
-		<div class="wrapper">
-			<div class="aboutMeHeader">
-				<div class="aboutContainer">
-					<p class="name3">About Me</p>
-					<p class="occupation3">Web Developer</p>
-				</div>
-
-				<div class="dotImg">
-					<img src="assets/Dotted Graphic.png" alt="">
-				</div>
-			</div>
-			<div class="meContainer">
-				<div class="headshot">
-					<img src="assets/headshot.png" alt="">
-				</div>
-				<div class="summary">
-					<p>My name is Chantale Barnard, I'm a Toronto based Web Developer. I'm fascinated in connecting people with technology.  </p>
-				</div>
-			</div>
-
-			
-
-		</div>
-	</section>
 	<footer id="contact">
 		<div class="wrapper">
-			<h3 class="contact">Contact Me</h3>
-			<a class="email" href = "mailto: hello@chantalebarnard.com">hello@chantalebarnard.com</a>
-			<div class="icons">
-				<a href="https://www.twitter.com/chantalebarnard"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyLjg1MSA1Mi44NTEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUyLjg1MSA1Mi44NTE7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4Ij4KPGc+Cgk8cGF0aCBkPSJNNTIuNDEyLDkuNjU2Yy0wLjM1NC0wLjI0LTAuODIzLTAuMjI3LTEuMTY1LDAuMDMxYy0wLjQ0OSwwLjM0LTEuMTc5LDAuNjEtMS45NjUsMC44MTggICBjMi4wNDctMi4yOTQsMi4wOTEtMy44MjYsMi4wNjktNC4xNzhjLTAuMDIzLTAuMzY0LTAuMjQyLTAuNjg3LTAuNTcyLTAuODQyYy0wLjMzMS0wLjE1Ni0wLjcxOS0wLjExOC0xLjAxNCwwLjA5NiAgIGMtMi4zMDMsMS42NzQtNC41OTcsMi4wMjctNS45NjEsMi4wNjNjLTIuMDk0LTIuMDA0LTQuODEzLTMuMTAyLTcuNzA3LTMuMTAyYy02LjE5NiwwLTExLjIzNiw1LjEwOC0xMS4yMzYsMTEuMzg2ICAgYzAsMC41NCwwLjAzOCwxLjA3OSwwLjExMywxLjYxM0MxNC4yMzYsMTcuNDIsNS41MTYsNy4xMzEsNS40MjYsNy4wMjRjLTAuMjEtMC4yNS0wLjUyOC0wLjM4NC0wLjg1NC0wLjM1NSAgIGMtMC4zMjYsMC4wMjgtMC42MTcsMC4yMTMtMC43OCwwLjQ5N0MwLjcwMiwxMi41MjYsMi43NywxNy4yMzQsNC42NiwxOS45M2MtMC4zMzQtMC4xNzgtMC42MDUtMC4zNTQtMC43NjctMC40NzMgICBjLTAuMy0wLjIyNC0wLjcwMS0wLjI2MS0xLjAzOS0wLjA5NWMtMC4zMzcsMC4xNjYtMC41NTIsMC41MDYtMC41NTksMC44ODFjLTAuMDgzLDUuMTA4LDIuMzc1LDguMDM0LDQuNjg3LDkuNjUyICAgYy0wLjMwOC0wLjAyOS0wLjYyMSwwLjA4NS0wLjgzNSwwLjMxOGMtMC4yNCwwLjI2MS0wLjMyNSwwLjYzLTAuMjIxLDAuOTY5YzEuNTk3LDUuMjI3LDUuNTE4LDcuMDAzLDguMDEzLDcuNjA2ICAgYy01LjEzLDMuOTk0LTEyLjY4LDIuNzA4LTEyLjc2MywyLjY5NGMtMC40NTYtMC4wODEtMC45MDYsMC4xNTktMS4wOTIsMC41ODJjLTAuMTg1LDAuNDIyLTAuMDU5LDAuOTE3LDAuMzA5LDEuMTk3ICAgYzUuNDE1LDQuMTMzLDExLjg5Miw1LjA0OCwxNi41Nyw1LjA0OGMzLjUzOSwwLDYuMDUtMC41MjQsNi4yOS0wLjU3N2MyMy42OTgtNS42MTYsMjQuMzY1LTI3LjMyMywyNC4zMS0zMC44OCAgIGM0LjQ0OS00LjEzNyw1LjE0NC01LjcxMyw1LjI1MS02LjEwM0M1Mi45MjksMTAuMzM2LDUyLjc2Nyw5Ljg5Niw1Mi40MTIsOS42NTZ6IE00NS44NzQsMTUuNjkxYy0wLjIyMywwLjIwNS0wLjM0LDAuNS0wLjMyLDAuODAzICAgYzAuMDYzLDAuOTYsMS4yNzUsMjMuNTk3LTIyLjc0MiwyOS4yODhjLTAuMTA5LDAuMDIzLTkuNjU2LDIuMDE1LTE3LjkzMi0yLjA4NWMzLjQ5Ny0wLjA5Nyw4LjUxMS0xLjAxMywxMi4wMDQtNC45MzUgICBjMC4yNjQtMC4yOTUsMC4zMjgtMC43MTksMC4xNjQtMS4wNzljLTAuMTYyLTAuMzU3LTAuNTE5LTAuNTg2LTAuOTEtMC41ODZjLTAuMDAzLDAtMC4wMDcsMC0wLjAxLDAgICBjLTAuMDUsMC4wMzItNS4zMDEtMC4wMDYtNy43MDUtNS4wMDFjMC45NjgsMC4wNTUsMi4xNjItMC4wMDUsMy4xMTMtMC40NDNjMC4zOTItMC4xODEsMC42MjMtMC41OTIsMC41NzUtMS4wMjEgICBjLTAuMDQ4LTAuNDI4LTAuMzY2LTAuNzc3LTAuNzg4LTAuODY2Yy0wLjI2OS0wLjA1Ny02LjExNS0xLjM2NC02LjkzMy03Ljc0MWMwLjg4NywwLjM4OCwyLjAyMiwwLjcwNSwzLjE0NCwwLjUzNCAgIGMwLjM4Ni0wLjA1OCwwLjcwMi0wLjMzNSwwLjgxMS0wLjcxcy0wLjAxLTAuNzc5LTAuMzA1LTEuMDM1Yy0wLjI1LTAuMjE4LTUuNzQtNS4wOTctMy4xMzctMTEuMzkgICBjMi44MjYsMi45NjUsMTEuMTk2LDEwLjY3LDIxLjMzNywxMC4wODhjMC4yOTctMC4wMTcsMC41NzItMC4xNjcsMC43NDktMC40MDdjMC4xNzYtMC4yNCwwLjIzNi0wLjU0NiwwLjE2NC0wLjgzNSAgIGMtMC4xOTItMC43NjUtMC4yOS0xLjU1My0wLjI5LTIuMzQxYzAtNS4xNzYsNC4xNDQtOS4zODYsOS4yMzctOS4zODZjMi40OTEsMCw0LjgyOCwwLjk5NCw2LjU3OSwyLjggICBjMC4xODQsMC4xOSwwLjQzNywwLjI5OSwwLjcwMSwwLjMwNGMxLjA2LDAuMDE1LDIuODAyLTAuMTEsNC43Ny0wLjg5OWMtMC41NjgsMC43MDctMS40MDIsMS41NTQtMi42MjksMi41MTggICBjLTAuMzQ3LDAuMjczLTAuNDc0LDAuNzQtMC4zMTMsMS4xNTFjMC4xNjEsMC40MTIsMC41NzcsMC42NzEsMS4wMTEsMC42MzJjMC4yMzMtMC4wMTksMS40MjEtMC4xMjMsMi43NjQtMC40MTQgICBDNDguMjQ5LDEzLjQyMyw0Ny4yNDYsMTQuNDI5LDQ1Ljg3NCwxNS42OTF6IiBmaWxsPSIjMGJlMGIwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a>
-				<a href="https://www.instagram.com/chantalebarnard/"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0iaW5zdGFncmFtIj4KCQk8Zz4KCQkJPHBhdGggZD0iTTUxMy4zODEsODQuODY1aC01Ni4xNThjLTE4LjM0NiwwLTMzLjI4MSwxNC45MzYtMzMuMjgxLDMzLjI4MXY1Ni4xNDRjMCwxOC4zNDUsMTQuOTM2LDMzLjI4MSwzMy4yODEsMzMuMjgxaDU2LjE1OCAgICAgYzE4LjM0NSwwLDMzLjI4MS0xNC45MzYsMzMuMjgxLTMzLjI4MXYtNTYuMTQ0QzU0Ni42NjIsOTkuOCw1MzEuNzI2LDg0Ljg2NSw1MTMuMzgxLDg0Ljg2NXogTTUxNy41MTksMTc0LjI5ICAgICBjMCwyLjI4OC0xLjg1MSw0LjEzOC00LjEzOCw0LjEzOGgtNTYuMTU4Yy0yLjI4OCwwLTQuMTM5LTEuODUxLTQuMTM5LTQuMTM4di01Ni4xNDRjMC0yLjI4OCwxLjg2NS00LjEzOCw0LjEzOS00LjEzOGg1Ni4xNTggICAgIGMyLjI3MiwwLDQuMTM4LDEuODUxLDQuMTM4LDQuMTM4VjE3NC4yOXogTTQ4MC44NTcsNy4yODZIMTMxLjE0M0M1OC44MzksNy4yODYsMCw2Ni4xMjUsMCwxMzguNDI5djMzNS4xNDIgICAgIGMwLDcyLjMwNSw1OC44MzksMTMxLjE0MywxMzEuMTQzLDEzMS4xNDNoMzQ5LjcxNEM1NTMuMTYsNjA0LjcxNCw2MTIsNTQ1Ljg3Niw2MTIsNDczLjU3MVYxMzguNDI5ICAgICBDNjEyLDY2LjEyNSw1NTMuMTYsNy4yODYsNDgwLjg1Nyw3LjI4NnogTTU4Mi44NTcsNDczLjU3MWMwLDU2LjI0Ni00NS43NTUsMTAyLTEwMiwxMDJIMTMxLjE0M2MtNTYuMjQ2LDAtMTAyLTQ1Ljc1NC0xMDItMTAyICAgICBWMjU1aDE0Ni44OTVjLTI3LjgwMiwzMC45NzktNDQuODk1LDcxLjc2NC00NC44OTUsMTE2LjU3MWMwLDk2LjQyLDc4LjQzOCwxNzQuODU3LDE3NC44NTcsMTc0Ljg1NyAgICAgczE3NC44NTctNzguNDM4LDE3NC44NTctMTc0Ljg1N2MwLTQ0LjgwNy0xNy4wOTMtODUuNTkyLTQ0Ljg5NS0xMTYuNTcxaDE0Ni44OTVWNDczLjU3MXogTTMwNiwyMjUuODU3ICAgICBjODAuMzQ3LDAsMTQ1LjcxNCw2NS4zNjgsMTQ1LjcxNCwxNDUuNzE0YzAsODAuMzQ4LTY1LjM2NywxNDUuNzE1LTE0NS43MTQsMTQ1LjcxNXMtMTQ1LjcxNC02NS4zNjctMTQ1LjcxNC0xNDUuNzE1ICAgICBDMTYwLjI4NiwyOTEuMjI1LDIyNS42NTMsMjI1Ljg1NywzMDYsMjI1Ljg1N3ogTTU4Mi44NTcsMjI1Ljg1N0g0MDIuNDQ4Yy0yNy42NzEtMTguMzc1LTYwLjgwNy0yOS4xNDMtOTYuNDQ4LTI5LjE0MyAgICAgYy0zNS42MjcsMC02OC43NzcsMTAuNzY4LTk2LjQ0OCwyOS4xNDNIMjkuMTQzdi04Ny40MjhjMC01Ni4yNDYsNDUuNzU0LTEwMiwxMDItMTAyaDM0OS43MTRjNTYuMjQ1LDAsMTAyLDQ1Ljc1NCwxMDIsMTAyICAgICBWMjI1Ljg1N3ogTTMwNiw0NzMuNTcxYzU2LjI0NiwwLDEwMi00NS43NTQsMTAyLTEwMmMwLTU2LjI0NC00NS43NTQtMTAyLTEwMi0xMDJjLTU2LjI0NiwwLTEwMiw0NS43NTUtMTAyLDEwMiAgICAgQzIwNCw0MjcuODE3LDI0OS43NTQsNDczLjU3MSwzMDYsNDczLjU3MXogTTMwNiwyOTguNzE1YzQwLjE3NCwwLDcyLjg1NywzMi42ODUsNzIuODU3LDcyLjg1NiAgICAgYzAsNDAuMTc0LTMyLjY4NCw3Mi44NTctNzIuODU3LDcyLjg1N2MtNDAuMTczLDAtNzIuODU3LTMyLjY4NC03Mi44NTctNzIuODU3QzIzMy4xNDMsMzMxLjM5OSwyNjUuODI3LDI5OC43MTUsMzA2LDI5OC43MTV6IiBmaWxsPSIjMGJlMGIwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></a>
-				<a href="https://medium.com/@chantalebarnard"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUxMS45ODEsMTE4LjUwOWMtMC4xMzUtMi45NTYtMS44OTItNS43MjYtNC41NjUtNy4wNGwtMTU5LjI0LTc5LjYyYy0zLjc3Ni0xLjg4Ny04LjM2My0wLjY0LTEwLjY2NCwyLjg5OCAgICBMMjI5LjkxNiwyMDAuMjgybC01NS40MTMtODUuODkxYy0wLjc5Ni0xLjIzNS0xLjk0NS0yLjI2NC0zLjI1OS0yLjkyMmwtMTU5LjI0LTc5LjYyQzYuNTgyLDI5LjEzOCwwLDMzLjIxOCwwLDM5LjI2OHY3OS42MjEgICAgYzAsNC41ODEsMy43MTIsOC4yOTQsOC4yOTQsOC4yOTRjNC41ODEsMCw4LjI5NC0zLjcxMiw4LjI5NC04LjI5NFY1Mi42ODdsMTQyLjY1Miw3MS4zMjZ2MzM1LjMyTDE2LjU4NywzODguMDA4VjE1NC4yNzcgICAgYzAtNC41ODEtMy43MTItOC4yOTQtOC4yOTQtOC4yOTRjLTQuNTgxLDAtOC4yOTQsMy43MTItOC4yOTQsOC4yOTR2MjM4Ljg1N2MwLDMuMTQyLDEuNzc1LDYuMDEzLDQuNTg1LDcuNDE4bDE1OS4yNCw3OS42MiAgICBjNS40MjcsMi43MTQsMTIuMDAzLTEuMzc1LDEyLjAwMy03LjQxOFYzMTguMDg3bDMyNC4xNywxNjIuMDg1YzUuNDI3LDIuNzE0LDEyLjAwMy0xLjM3NSwxMi4wMDMtNy40MThWMTE4Ljg4OCAgICBDNTEyLDExOC43Niw1MTEuOTg3LDExOC42MzYsNTExLjk4MSwxMTguNTA5eiBNMTc1LjgyNywyOTkuNTQxdi0xNTIuNWwxNDUuMjM5LDIyNS4xMkwxNzUuODI3LDI5OS41NDF6IE00OTUuNDEzLDQ1OS4zMzUgICAgbC0xMzkuMzQtNjkuNjcxbDEwOC41NzYtMTg2Ljk5M2MyLjI5OS0zLjk2MSwwLjk1Mi05LjAzNy0zLjAwOS0xMS4zMzdjLTMuOTYtMi4yOTgtOS4wMzYtMC45NTMtMTEuMzM3LDMuMDA5TDM0NC4wOTQsMzc3LjI1OCAgICBMMjM5Ljc3LDIxNS41NTVMMzQ3LjM4Myw0OS45OThsMTQ0LjcxNyw3Mi4zNTlsLTI2LjM4Nyw0NS40NDZjLTIuMjk5LDMuOTYxLTAuOTUyLDkuMDM3LDMuMDA5LDExLjMzNyAgICBjMy45NTgsMi4yOTcsOS4wMzUsMC45NTMsMTEuMzM3LTMuMDA5bDE1LjM1NC0yNi40NDNWNDU5LjMzNXoiIGZpbGw9IiMwYmUwYjAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a>
-				<a href="https://www.linkedin.com/in/chantale-barnard-a65990106/"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEpIj4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNNjguMTIsNC4yNjdjLTE4Ljc3MywwLTM1Ljg0LDYuODI3LTQ4LjY0LDE5LjYyN0M1LjgyNywzNy41NDctMSw1NC42MTMtMSw3Mi41MzNjMCwxOC43NzMsNy42OCwzNS44NCwyMC40OCw0OC42NCAgICAgYzEyLjgsMTIuOCwzMC43MiwyMC40OCw0Ny43ODcsMTkuNjI3YzAsMCwwLjg1MywwLDEuNzA3LDBjMTcuMDY3LDAsMzMuMjgtNi44MjcsNDYuMDgtMTkuNjI3ICAgICBjMTIuOC0xMi44LDIwLjQ4LTI5Ljg2NywyMC40OC00OC42NGMwLjg1My0xNy45Mi02LjgyNy0zNC45ODctMTkuNjI3LTQ3Ljc4N0MxMDMuMTA3LDExLjA5Myw4Ni4wNCw0LjI2Nyw2OC4xMiw0LjI2N3ogICAgICBNMTAzLjEwNywxMDkuMjI3Yy05LjM4Nyw5LjM4Ny0yMi4xODcsMTUuMzYtMzUuODQsMTQuNTA3Yy0xMi44LDAtMjYuNDUzLTUuMTItMzUuODQtMTQuNTA3ICAgICBjLTEwLjI0LTkuMzg3LTE1LjM2LTIzLjA0LTE1LjM2LTM2LjY5M3M1LjEyLTI2LjQ1MywxNS4zNi0zNi42OTNjOS4zODctOS4zODcsMjIuMTg3LTE0LjUwNywzNi42OTMtMTQuNTA3ICAgICBjMTIuOCwwLDI1LjYsNS4xMiwzNC45ODcsMTQuNTA3YzEwLjI0LDEwLjI0LDE1LjM2LDIzLjA0LDE1LjM2LDM2LjY5M1MxMTMuMzQ3LDk5Ljg0LDEwMy4xMDcsMTA5LjIyN3oiIGZpbGw9IiMwYmUwYjAiLz4KCQkJPHBhdGggZD0iTTEwMS40LDE1Ny44NjdIMzIuMjhjLTEzLjY1MywwLTI0Ljc0NywxMS4wOTMtMjQuNzQ3LDI1LjZ2Mjk4LjY2N2MwLDEzLjY1MywxMS45NDcsMjUuNiwyNS42LDI1LjZIMTAxLjQgICAgIGMxMy42NTMsMCwyNS42LTExLjk0NywyNS42LTI0Ljc0N3YtMjk5LjUyQzEyNywxNjkuODEzLDExNS4wNTMsMTU3Ljg2NywxMDEuNCwxNTcuODY3eiBNMTA5LjkzMyw0ODIuOTg3ICAgICBjMCw0LjI2Ny00LjI2Nyw3LjY4LTguNTMzLDcuNjhIMzMuMTMzYy00LjI2NywwLTguNTMzLTQuMjY3LTguNTMzLTguNTMzVjE4My40NjdjMC00LjI2NywzLjQxMy04LjUzMyw3LjY4LTguNTMzaDY5LjEyICAgICBjNC4yNjcsMCw4LjUzMyw0LjI2Nyw4LjUzMyw4LjUzM1Y0ODIuOTg3eiIgZmlsbD0iIzBiZTBiMCIvPgoJCQk8cGF0aCBkPSJNMzkxLjUzMywxNDkuMzMzaC0xNy45MmMtMzMuMjgsMC02NC44NTMsMTQuNTA3LTg1LjMzMywzNy41NDd2LTExLjk0N2MwLTguNTMzLTguNTMzLTE3LjA2Ny0xNy4wNjctMTcuMDY3SDE4NS44OCAgICAgYy03LjY4LDAtMTcuMDY3LDYuODI3LTE3LjA2NywxNi4yMTN2MzE4LjI5M2MwLDkuMzg3LDkuMzg3LDE1LjM2LDE3LjA2NywxNS4zNmg5My44NjdjNy42OCwwLDE3LjA2Ny01Ljk3MywxNy4wNjctMTUuMzZ2LTE4NC4zMiAgICAgYzAtMjguMTYsMjAuNDgtNTAuMzQ3LDQ2LjkzMy01MC4zNDdjMTMuNjUzLDAsMjYuNDUzLDUuMTIsMzUuODQsMTQuNTA3YzguNTMzLDcuNjgsMTEuOTQ3LDE5LjYyNywxMS45NDcsMzQuOTg3djE4My40NjcgICAgIGMwLDguNTMzLDguNTMzLDE3LjA2NywxNy4wNjcsMTcuMDY3aDg1LjMzM2M4LjUzMywwLDE3LjA2Ny04LjUzMywxNy4wNjctMTcuMDY3di0yMjAuMTYgICAgIEM1MTEsMjAyLjI0LDQ1OC45NDcsMTQ5LjMzMywzOTEuNTMzLDE0OS4zMzN6IE00OTMuOTMzLDQ4OS44MTNsLTAuODUzLDAuODUzaC04My42MjdMNDA4LjYsMzA3LjIgICAgIGMwLTIwLjQ4LTUuMTItMzUuODQtMTYuMjEzLTQ2LjkzM2MtMTIuOC0xMi44LTI5Ljg2Ny0xOS42MjctNDcuNzg3LTE5LjYyN2MtMzUuODQsMC44NTMtNjQsMjkuODY3LTY0LDY3LjQxM3YxODIuNjEzaC05My44NjcgICAgIFYxNzQuOTMzaDg0LjQ4bDAuODUzLDAuODUzdjUzLjc2bDIzLjA0LTIzLjA0bDAuODUzLTAuODUzYzE3LjA2Ny0yMy44OTMsNDYuOTMzLTM5LjI1Myw3OC41MDctMzkuMjUzaDE3LjkyICAgICBjNTcuMTczLDAsMTAxLjU0Nyw0Ni4wOCwxMDEuNTQ3LDEwNC4xMDdWNDg5LjgxM3oiIGZpbGw9IiMwYmUwYjAiLz4KCQk8L2c+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></a>
+			<div class="footerContainer">
+				<div class="contactTitle">
+					<h6 class="contact">Lets get in touch!</h6>
+				</div>
+				<div class="emailP">
+					<a class="email" href = "mailto: hello@chantalebarnard.com">hello@chantalebarnard.com</a>
+				</div>
+				<div class="icons">
+					<a target="_blank" href="https://www.facebook.com/chantale.barnard"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://www.instagram.com/chantalebarnard/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://medium.com/@chantalebarnard"><i class="fa fa-medium" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://twitter.com/chantalebarnard"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://www.linkedin.com/in/chantale-barnard/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a target="_blank" href="https://www.github.com/chantalebarnard"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+				</div>
+
+			</div>
+			<div class="icons1">
+				<p>Thanks for stopping by!</p>
 			</div>
 			<div class="credit">
-				<p class="finalWords">My name is Chantale Barard and I am a Toronto based Web-Developer. I write </p>
-				<p class="copywrite">copywrite</p>
+				<p class="finalWords"></p>
+				<p class="copywrite"> © 2017 Chantale Barnard </p>
 			</div>
 		</div>
 	</footer>
@@ -178,10 +168,6 @@
 	<script src="./public/scripts/wow.js"></script>
 	<script src="./public/scripts/main.js"></script>
 
-	<!-- <script src="js/wow.min.js"></script> -->
-	
+
 </body>
 </html>
-
-<!-- icon credit  -->
-<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
